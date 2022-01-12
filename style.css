@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cyb-logo {
+  width: 350px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+}
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+#text {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
