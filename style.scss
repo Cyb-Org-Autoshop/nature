@@ -6,7 +6,9 @@
 
 body,
 html {
+  font-family: Arial, sans-serif;
   overflow: hidden;
+  direction: rtl;
 }
 
 img {
@@ -37,6 +39,32 @@ img {
   left: 0;
   position: absolute;
   top: 0;
+}
+
+#commercial {
+  background-color: rgba(0, 0, 0, .5);
+  bottom: 15px;
+  left: 50%;
+  padding: 1em;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+
+  .content {
+    h1 {
+      color: #fff;
+    }
+
+    h2 {
+      color: rgba(73, 180, 206, 1);
+    }
+
+    margin-bottom: .5em;
+  }
+
+  iframe {
+    border: 0;
+  }
 }
 
 @media (min-aspect-ratio: 16/9) {
