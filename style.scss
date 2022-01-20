@@ -51,6 +51,8 @@ img {
   transform: translateX(-50%);
 
   .content {
+    direction: ltr;
+
     h1 {
       color: #fff;
     }

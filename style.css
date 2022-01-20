@@ -50,6 +50,7 @@ img {
   transform: translateX(-50%);
 }
 #commercial .content {
+  direction: ltr;
   margin-bottom: 0.5em;
 }
 #commercial .content h1 {
